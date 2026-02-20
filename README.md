@@ -107,7 +107,6 @@ This validated:
 
 * Multi-repository workflow
 * Cross-project integration readiness
-* Preparation for SoC-level development
 
 ---
 ### Step4 - Local Machine Preparation
@@ -120,22 +119,35 @@ This validated:
 ## Confirmation for usage of Github codespace Environment:
 * Below image shoew the details regaring the usage of codespace.
 ![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/9c2378b616345d75f365fc57ecae0bd9569760fb/images/codespace_usage_proof.png)
+
 ## 🏗 System Understanding
 
 During this task, the following architectural concepts were analyzed:
 
 * Location of RISC-V firmware in repository
 * Compilation and linking flow
-* Logical integration point for new FPGA IP blocks
 
 This ensures readiness for future RTL/IP integration tasks.
 
 ---
 
-## Understanding Important Concepts
+## Understanding Concepts
 
 ### 1. Where is the RISC-V program located in the vsd-riscv2 repository?
+The RISC-V PROGRAM is located in .S , in my case it is sum1ton.S,, this file contains the RISC-V program.
 
+### 2. How is the program compiled and loaded into memory?
+The process follows a specific "Cross-Compilation" chain:
+The riscv64-unknown-elf-gcc compiler takesthe  C code and converts it into a RISC-V ELF file.
+A tool called objcopy converts that ELF file into a raw binary (.bin) or a hex file (.hex).
+The hex file is read by your Verilog testbench using the $readmemh command to initialize the simulated RAM.
+
+### 3. How does the RISC-V core access memory and memory-mapped IO?
+
+The RISC-V core uses Memory-Mapped I/O which means that the  CPU doesn't distinguish between "talking to RAM" and "talking to an LED." It just sees different addresses.
+
+### 4. Where would a new FPGA IP block logically integrate in this system?
+A new IP block (like a PWM controller or an I2C master) would logically integrate onto the System Bus.
 
 ## 🎯 Key Learning Outcomes
 
