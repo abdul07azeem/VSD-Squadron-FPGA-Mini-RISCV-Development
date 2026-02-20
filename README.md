@@ -85,6 +85,8 @@ iverilog -V </pre>
 ![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/7831ba60aa18831c3334bf2bd738116990f8796f/images/riscv_refernce_program_novnc.png)
 
 ### In the image below the value of n is changed to 14 and executed to verify:
+
+![](https://github.com/abdul07azeem/VSD-Squadron-FPGA-Mini-RISCV-Development/blob/7493024e6745f0050f87f2e179ebeb7f43c97479/images/sum1ton.c.png)
 ![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/7831ba60aa18831c3334bf2bd738116990f8796f/images/riscv_refernce_program_novnc1.png)
 
 This confirmed:
@@ -154,16 +156,6 @@ A new IP block (like a PWM controller or an I2C master) would logically integrat
 * Industry-style environment onboarding
 * Toolchain validation before modification
 * Understanding before implementation
-
----
-
-## 🧪 Optional Validation Performed
-
-* Modified firmware constant/message
-* Rebuilt and re-executed program
-* Observed correct behavioral change
-
-This confirmed full control over the build and execution pipeline.
 
 ---
 ## ✍️ Author
