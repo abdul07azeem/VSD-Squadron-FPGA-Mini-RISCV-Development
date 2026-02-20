@@ -154,5 +154,8 @@ This ensures readiness for future RTL/IP integration tasks.
 This confirmed full control over the build and execution pipeline.
 
 ---
+## ✍️ Author
 
+| <img src="https://github.com/abdul07azeem.png" width="100"> | **Abdul Azeem** <br> *VLSI Physical Design Enthusiast* <br> [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/abdulazeemb290704) [![Gmail](https://img.shields.io/badge/Gmail-Email_Me-red?style=flat&logo=gmail)](mailto:abdul07azeem@gmail.com) |
+| :--- | :--- |
 
