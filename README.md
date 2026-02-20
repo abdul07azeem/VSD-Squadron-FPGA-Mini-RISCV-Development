@@ -1,4 +1,4 @@
-# vsd-riscv-ip-development
+# VSD-RISCV-IP-DEVELOPMENT
 
 # 🚀 Task-1: Environment Setup & RISC-V Reference Bring-Up
 
