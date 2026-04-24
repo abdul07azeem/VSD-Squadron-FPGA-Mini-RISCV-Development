@@ -1,4 +1,4 @@
-# VSD-Squadron-FPGA-Mini-RISCV-Development
+# VSD-Squadron-FPGA-Mini-RISCV-IP-Development-Internship
 
 # 🚀 Task-1: Environment Setup & RISC-V Reference Bring-Up
 
